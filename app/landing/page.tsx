@@ -2,7 +2,9 @@ import React from 'react'
 
 const Landing = () => {
   return (
-    <div className="">Landing</div>
+    <section className='flex justify-center items-center z-0'>
+      Landing
+    </section>
   )
 }
 
