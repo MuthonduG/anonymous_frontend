@@ -11,13 +11,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #d6d6d6;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--background);
+  background: var(--foreground);
   font-family: "PT Serif", serif;
   padding: 0;
   margin: 0;

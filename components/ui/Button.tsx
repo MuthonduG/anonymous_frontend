@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { ReactNode } from 'react';
 
-const Button = () => {
-  return (
-    <div>Button</div>
-  )
+interface ButtonProps {
+  children: ReactNode;
+  btnType?: "button" | "submit" | "reset";
+  className?: string;
+  ariaLabel?: string; 
 }
 
-export default Button
+const Button = ({ btnType = "button", children, className = "", ariaLabel }: ButtonProps) => {
+  return (
+    <button
+      type={btnType}
+      className={`bg-zinc-700 p-2 px-4 text-slate-200 rounded-xl hover:bg-zinc-900 hover:text-zinc-400 transition delay-75 ${className}`}
+      aria-label={ariaLabel}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default Button;
