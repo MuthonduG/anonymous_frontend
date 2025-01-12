@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Card = () => {
+interface CardProps {
+  children: ReactNode;
+  classname?: string; 
+}
+
+const Card = ({children, classname}: CardProps) => {
   return (
-    <div>Card</div>
+    <article className={`shadow-2xl w-fit h-auto p-3 rounded-xl flex justify-center items-center ${classname}`}>
+      {children}
+    </article>
   )
 }
 

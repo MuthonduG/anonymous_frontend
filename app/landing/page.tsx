@@ -1,10 +1,11 @@
 import React from 'react'
 import Hero from '@/components/Hero/Hero'
+import About from '@/components/About/About'
 
 const Landing = () => {
   return (
     <section className='flex justify-center items-center'>
-      <div className="mt-28 p-3 flex flex-col justify-center items-center xl:w-[70%] md:w-full">
+      <div className="mt-36 p-3 flex flex-col justify-center items-center xl:w-[70%] md:w-full">
         <div className="flex flex-col justify-center items-center gap-5">
           <Hero
               direction="down"
@@ -32,6 +33,7 @@ const Landing = () => {
                 </button>
               </div>
           </Hero>
+          <About/>
         </div>
       </div>
     </section>
