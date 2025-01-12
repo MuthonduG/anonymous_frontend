@@ -26,8 +26,8 @@ const About = () => {
           About Anonymous
         </span>
       </div>
-      
-      <div className="leading-10 p-6">
+
+      <div className="leading-10 p-6 text-center">
         <p className=''>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quaerat ea ut dolores similique est?
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium sunt fuga cupiditate corrupti fugiat quae.
@@ -35,17 +35,17 @@ const About = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 justify-between gap-4 xl:w-full md:w-[90%] sm:w-full mt-">
+      <div className="grid xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 justify-between gap-8 xl:w-full md:w-[90%] sm:w-full mt-">
         {
           AboutFeatures.map((item, index)=> {
             return(
               <div key={index} className="">
                 <Card classname='bg-slate-200 flex-col'>
-                  <div className="flex justify-between items-center w-full font-semibold p-3 leading-10 text-xl">
+                  <div className="flex justify-between items-center w-full font-semibold p-3 text-xl">
                     <span>{item.icon}</span>
                     <span>{item.title}</span>
                   </div>
-                  <div className="flex justify-center items-center p-4 text-slate-600">
+                  <div className="flex justify-center items-center p-4 text-slate-600 leading-10">
                     {item.description}
                   </div>
                 </Card>
