@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'next/link';
 import Button from '../ui/Button';
 
-import { AiOutlineMail } from "react-icons/ai";
-
 type FooterLinks = {
   label: string;
   link: string;
