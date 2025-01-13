@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '@/components/Hero/Hero'
 import About from '@/components/About/About'
 import Faqs from '@/components/FAQs/Faqs'
+import Contact from '@/components/Contact/Contact'
 
 const Landing = () => {
   return (
@@ -36,6 +37,7 @@ const Landing = () => {
           </Hero>
           <About/>
           <Faqs/>
+          <Contact/>
         </div>
       </div>
     </section>

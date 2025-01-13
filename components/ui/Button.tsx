@@ -11,7 +11,7 @@ const Button = ({ btnType = "button", children, className = "", ariaLabel }: But
   return (
     <button
       type={btnType}
-      className={`bg-zinc-700 p-2 px-4 text-slate-200 rounded-xl hover:bg-zinc-900 hover:text-zinc-400 transition delay-75 ${className}`}
+      className={`bg-zinc-700 p-2 px-4 text-slate-200 rounded-xl hover:bg-zinc-900 hover:text-zinc-200 transition delay-75 ${className}`}
       aria-label={ariaLabel}
     >
       {children}
