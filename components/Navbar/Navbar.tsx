@@ -25,7 +25,7 @@ const landingPageHyperlinks: landingPageLinks[] = [
   { label: 'FAQs', link: "#faqs", icon: <LuMessageCircleQuestion /> },
 ];
 
-const dashboardLinks: landingPageLinks[] = []
+// const dashboardLinks: landingPageLinks[] = []
 
 const Navbar = () => {
   const [isPopup, setIsPopup] = useState<boolean>(false);
